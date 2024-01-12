@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+import Text from './components/Text.js'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<Parallax pages={2} className='animation'>
+			<ParallaxLayer offset={0} speed={0.2}>
+				<div className='animationLayer' id='background'></div>
+			</ParallaxLayer>
+			<ParallaxLayer offset={0} speed={0.35}>
+				<div className='animationLayer' id='dog'></div>
+			</ParallaxLayer>
+			<ParallaxLayer offset={0} speed={-0.3}>
+				<div className='animationLayer' id='title'></div>
+			</ParallaxLayer>
+			<ParallaxLayer offset={0} speed={0.35}>
+				<div className='animationLayer' id='mountains'></div>
+			</ParallaxLayer>
+			<ParallaxLayer offset={1} speed={0.35}>
+				<Text />
+			</ParallaxLayer>
+		</Parallax>
+	)
 }
 
-export default App;
+export default App

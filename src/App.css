@@ -1,38 +1,36 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #00213F;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.animation, .animationLayer {
+	height: 100vh;
+  width: 100vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.animation {
+  display: block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.animationLayer {
+  background-position: top center;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
-.App-link {
-  color: #61dafb;
+#background {
+  background-image: url('./images/Full.png');
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#dog {
+  background-image: url('./images/Fiora.png');
+}
+#title {
+  background-image: url('./images/Fiorkathedoggo.png');
+}
+#mountains {
+  background-image: url('./images/Mountains.png');
 }
