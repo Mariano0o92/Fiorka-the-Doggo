@@ -9,13 +9,13 @@ function App() {
 	return (
 		<div className="wrapper">
 <header>
-			<img src={Full} alt='' className='background' />
+			<img src={Full} alt='Sky full of stars' className='background' />
 
-			<img src={Fiora} alt='' className='dog' />
+			<img src={Fiora} alt='black dog' className='dog' />
 
-			<img src={Fiorkathedoggo} alt='' className='title' />
+			<img src={Fiorkathedoggo} alt='Fiorka the Doggo title' className='title' />
 
-			<img src={Mountains} alt='' className='mountains' />
+			<img src={Mountains} alt='mountains at night' className='mountains' />
 </header>
 
 <Text />
