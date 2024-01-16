@@ -1,7 +1,9 @@
 #story {
 	height: 100vh;
-	margin-top: 50px;
-	background-color: #00213f;
+	background-image: url('../../images/storyBackground1.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
 
 }
 .story-container {
@@ -15,6 +17,7 @@
 }
 
 .story-container__title {
+	margin-top: 50px;
 	padding-bottom: 20px;
 	color: #FDD1D1;
 	font-size: 70px;
