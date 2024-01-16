@@ -3,14 +3,21 @@ import { motion, AnimatePresence } from 'framer-motion';
 import './Text.css';
 
 
-const Text = ({ text, image, alt, buttonContent, answer, icon }) => {
+const Text = ({ text, image, alt, buttonContent, answer, icon, onButtonClick }) => {
   const [show, setShow] = useState(true);
+
+  const handleButtonClick = () => {
+    setShow(!show);
+    if (onButtonClick) {
+      onButtonClick();
+    }
+  };
 
   return (
     <section id="story">
       <div className="story-container">
         <h1 className="story-container__title">{text}</h1>
-        <button onClick={() => setShow(!show)} className="story-container__btn">
+        <button onClick={handleButtonClick} className="story-container__btn">
           {buttonContent}
         </button>
         <AnimatePresence>

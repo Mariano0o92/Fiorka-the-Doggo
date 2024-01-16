@@ -54,4 +54,9 @@
 	border-radius: 15px;
 	text-transform: uppercase;
 	cursor: pointer;
+	transition: all linear 0.2s;
+}
+
+.story-container__btn:hover {
+	box-shadow: 0 0 10px #FDD1D1;
 }
