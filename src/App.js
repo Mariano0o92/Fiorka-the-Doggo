@@ -1,25 +1,17 @@
 import './App.css'
-import Text from './components/Text.js'
-import Fiora from './images/Fiora.png'
-import Fiorkathedoggo from './images/Fiorkathedoggo.png'
-import Full from './images/Full.png'
-import Mountains from './images/Mountains.png'
+import Text from './components/Story/Text.js'
+import Hero from './components/HeroImage/Hero.js'
+import Fiorella from './images/Fiorella.png';
+import Fiorella2 from './images/Fiorella2.png';
+import { GiWolfHowl, GiBat } from 'react-icons/gi';
 
 function App() {
 	return (
-		<div className="wrapper">
-<header>
-			<img src={Full} alt='Sky full of stars' className='background' />
-
-			<img src={Fiora} alt='black dog' className='dog' />
-
-			<img src={Fiorkathedoggo} alt='Fiorka the Doggo title' className='title' />
-
-			<img src={Mountains} alt='mountains at night' className='mountains' />
-</header>
-
-<Text />
-		</div>
+<div className='wrapper'>
+<Hero />
+<Text text='Who is Fiorka? Is she a Doggo or is she a Wolfie?' buttonContent='show me that beast' image={Fiorella} alt='Sitting dog' answer="It's hard to define... " icon={<GiWolfHowl />} />
+<Text text='But there is one thing I am sure of:' buttonContent='i wanna know!' image={Fiorella2} alt='funny dog' answer="At night she flies with the bats! " icon={<GiBat />} />
+</div>
 
 	)
 }
