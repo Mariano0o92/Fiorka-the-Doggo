@@ -29,3 +29,13 @@ h1 {
     width: 20vw;
     height: 20vw;
 }
+
+@media (max-width: 768px) and (min-height: 500px){
+h1 {
+    font-size: 50px;
+}
+.ending-container__image {
+    width: 40vw;
+    height: 40vw;
+}
+}

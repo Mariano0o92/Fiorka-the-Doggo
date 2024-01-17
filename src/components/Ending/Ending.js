@@ -26,6 +26,7 @@ const Ending = () => {
 						transition: 'all 0.5s linear 1.5s',
 					}}
 					src={Fiorella3}
+					alt='Funny dog'
 					className='ending-container__image'
 				/>
 			</div>

@@ -60,3 +60,20 @@
 .story-container__btn:hover {
 	box-shadow: 0 0 10px #FDD1D1;
 }
+
+
+@media (max-width: 768px) and (min-height: 500px){
+	.story-container__title {
+		font-size: 32px;
+	}
+	.story-container__image {
+		width: 40vw;
+		height: 40vw;
+	}
+	.story-container__btn {
+		font-size: 20px;
+	}
+	.story-container__text {
+		font-size: 20px;
+	}
+}

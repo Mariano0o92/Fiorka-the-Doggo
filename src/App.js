@@ -3,6 +3,7 @@ import './App.css'
 import Story from './components/Story/Story.js'
 import Hero from './components/HeroImage/Hero.js'
 import Ending from './components/Ending/Ending.js'
+import Footer from './components/Footer/Footer.js'
 import Fiorella from './images/Fiorella.png'
 import Fiorella2 from './images/Fiorella2.png'
 import { GiWolfHowl, GiBat } from 'react-icons/gi'
@@ -34,6 +35,7 @@ function App() {
 				/>
 			)}
 			{shownextSection && <Ending />}
+			{shownextSection && <Footer />}
 		</div>
 	)
 }
