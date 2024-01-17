@@ -40,8 +40,8 @@
 
 .story-container__image {
 	padding-top: 20px;
-	width: 500px;
-	height: 500px;
+	width: 20vw;
+	height: 20vw;
 }
 .story-container__btn {
 	margin: 10px;
